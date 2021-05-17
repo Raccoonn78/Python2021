@@ -34,10 +34,75 @@ class C32:
           else:
                  raise RuntimeError
                     
-                    
-                    
-                    
-                    
+           
+     def stay(self):
+          if self.state =='A':
+               self.state='C'
+               return 1
+          elif self.state=='C':
+               self.state='D'
+               return 5
+          elif self.state=='D':
+               self.state='E'
+               return 6
+          elif self.state=='G':
+               self.state='H'
+               return 10
+          else:
+               raise RuntimeError
+
+      
+
+print("First case: ")
+a = C32()
+print(f"o.etch()  = {a.etch()}")
+print(f"o.stay()  = {a.stay()}")
+print(f"o.hop()  = {a.hop()}")
+print(f"o.stay()  = {a.stay()}")
+print(f"o.hop() = {a.hop()}")
+print(f"o.etch()  = {a.etch()}")
+print(f"o.stay() = {a.stay()}")
+print(f"o.stay() = {a.stay()}")
+print(f"o.etch()  = {a.etch()}")
+print(f"o.etch()  = {a.etch()}")
+print(f"o.hop() = {a.hop()}")
+print(f"o.stay()= {a.stay()}")
+print(f"o.stay()= {a.stay()}")
+print(f"o.etch() = {a.etch()}")
+print(f"o.stay()= {a.stay()}")
+print(f"o.hop()    = {a.hop()}")
+
+
+
+b = C32()
+
+print("\nSecond case:")
+print(f"o.etch()  = {b.etch()}")
+print(f"o.hop()  = {b.hop()}")
+print(f"o.etch() = {b.etch()}")
+print(f"o.etch()   = {b.etch()}")
+print(f"o.stay()= {b.stay()}")
+print(f"o.stay()= {b.stay()}")
+print(f"o.etch() = {b.etch()}")
+print(f"o.hop() = {b.hop()}")
+print(f"o.stay() = {b.stay()}")
+print(f"o.stay() = {b.stay()}")
+print(f"o.etch()  = {b.etch()}")
+print(f"o.stay() = {b.stay()}")
+print(f"o.etch()  = {b.etch()}")
+print(f"o.etch()  = {b.etch()}")
+print(f"o.hop() = {b.hop()}")
+
+
+
+
+
+
+
+
+
+
+
                     
 import struct
 
@@ -111,60 +176,5 @@ b'\x0b\xdb%\x07q4\x8by\xa6\xbbp\xb8\xe9\xe90\x82\xdbp\xed\x0bG\xad\xdc\xe9'
 b'\xfc5\xce!\x11|\x8f4\x02\x00\x00\x00d\x00\x00\x00'))                    
 
 
-     def stay(self):
-          if self.state =='A':
-               self.state='C'
-               return 1
-          elif self.state=='C':
-               self.state='D'
-               return 5
-          elif self.state=='D':
-               self.state='E'
-               return 6
-          elif self.state=='G':
-               self.state='H'
-               return 10
-          else:
-               raise RuntimeError
-
-      
-
-print("First case: ")
-a = C32()
-print(f"o.etch()  = {a.etch()}")
-print(f"o.stay()  = {a.stay()}")
-print(f"o.hop()  = {a.hop()}")
-print(f"o.stay()  = {a.stay()}")
-print(f"o.hop() = {a.hop()}")
-print(f"o.etch()  = {a.etch()}")
-print(f"o.stay() = {a.stay()}")
-print(f"o.stay() = {a.stay()}")
-print(f"o.etch()  = {a.etch()}")
-print(f"o.etch()  = {a.etch()}")
-print(f"o.hop() = {a.hop()}")
-print(f"o.stay()= {a.stay()}")
-print(f"o.stay()= {a.stay()}")
-print(f"o.etch() = {a.etch()}")
-print(f"o.stay()= {a.stay()}")
-print(f"o.hop()    = {a.hop()}")
 
 
-
-b = C32()
-
-print("\nSecond case:")
-print(f"o.etch()  = {b.etch()}")
-print(f"o.hop()  = {b.hop()}")
-print(f"o.etch() = {b.etch()}")
-print(f"o.etch()   = {b.etch()}")
-print(f"o.stay()= {b.stay()}")
-print(f"o.stay()= {b.stay()}")
-print(f"o.etch() = {b.etch()}")
-print(f"o.hop() = {b.hop()}")
-print(f"o.stay() = {b.stay()}")
-print(f"o.stay() = {b.stay()}")
-print(f"o.etch()  = {b.etch()}")
-print(f"o.stay() = {b.stay()}")
-print(f"o.etch()  = {b.etch()}")
-print(f"o.etch()  = {b.etch()}")
-print(f"o.hop() = {b.hop()}")
